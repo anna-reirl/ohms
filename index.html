@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+    <title>Закон Ома</title>
+</head>
+<body style="width: 800px; margin-left:auto; margin-right:auto;">
+    <center>
+        
+        <canvas id="myCanvas" width="800px" height="500px"></canvas>
+    </center>
+
+    <center>
+        <div id="buttons">
+            <input type="button" id="add_battery" value="Добавить батарейку" onclick="add_battery()">
+            <input type="button" id="remove_battery" value="Удалить батарейку" onclick="remove_battery()">
+            <input type="button" id="reset" value="Сбросить" onclick="reset()">
+        </div>
+        <br>
+        <div id="Rslider">
+            Установить сопротивление -  R
+            <input type="range" id="R" min="10" max="1000" value="10" step="1" onchange="showR(this.value)">      
+        </div>
+    </center>
+    <script>
+        var x = "script.js";
+        document.write("<script type='text/javascript' src='"+ x + "'><\/scr" + "ipt>");
+    </script>
+</body>
+</html>
